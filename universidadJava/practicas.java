@@ -1,6 +1,11 @@
-public class universidadJava {
+public class Test {
+    int atributo1;
+    Test(int atrib){atributo1 = atrib;}     
+  public static void main (String[ ] Args) {
+      Test lol = new Test(3);
+      System.out.println ("Mensaje 1");
+      System.out.println ("Atributo 1 vale " + lol.getAtrib1());
+  }
 
-    public static void main(String args[]) { // main permite ejecutar el programa
-        System.out.println("Cesar Luis Rodriguez Solera");
-    }
+  public int getAtrib1() {return atributo1;}
 }
